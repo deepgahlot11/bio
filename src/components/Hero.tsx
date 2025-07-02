@@ -21,21 +21,21 @@ const Hero = () => {
         
         {/* Name and Title */}
         <div className="space-y-4">
-          <h1 className="text-5xl md:text-6xl font-light text-foreground tracking-tight">
+          <h1 className="text-5xl md:text-6xl font-light text-foreground tracking-tight text-reveal">
             Deep Gahlot
           </h1>
-          <p className="text-xl md:text-2xl text-primary font-light">
+          <p className="text-xl md:text-2xl text-primary font-light text-reveal delay-1">
             Software Developer / Architect
           </p>
         </div>
         
         {/* Brief Introduction */}
-        <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+        <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed text-reveal delay-2">
           Results-driven technical manager with extensive experience in designing, implementing, and managing robust software solutions. Proven track record in leading teams and cross-functional teams and delivering high-quality products on time. Good in architecting, designing AWS based cloud solutions.
         </p>
         
         {/* CTA Button */}
-        <div className="flex justify-center items-center pt-6">
+        <div className="flex justify-center items-center pt-6 text-reveal delay-3">
           <Button 
             variant="default" 
             size="lg"

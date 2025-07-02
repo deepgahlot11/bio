@@ -1,16 +1,17 @@
 const About = () => {
   return (
-    <section className="py-20 px-6 bg-background">
-      <div className="max-w-4xl mx-auto">
+    <section className="py-20 px-6 bg-background section-bg-animation">
+      <div className="floating-dots"></div>
+      <div className="max-w-4xl mx-auto relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-light text-foreground mb-6">
+          <h2 className="text-3xl md:text-4xl font-light text-foreground mb-6 text-reveal">
             About Me
           </h2>
-          <div className="w-20 h-0.5 bg-primary mx-auto"></div>
+          <div className="w-20 h-0.5 bg-primary mx-auto text-reveal delay-1"></div>
         </div>
         
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6">
+          <div className="space-y-6 text-reveal delay-2">
             <p className="text-muted-foreground leading-relaxed">
               Adept at leveraging innovative technologies to drive efficiency and enhance user experience. 
               Strong communicator with a passion for mentoring and fostering collaborative environments. 
@@ -28,7 +29,7 @@ const About = () => {
             </p>
           </div>
           
-          <div className="bg-gradient-card p-8 rounded-xl shadow-card">
+          <div className="bg-gradient-card p-8 rounded-xl shadow-card card-hover text-reveal delay-3">
             <h3 className="text-xl font-medium text-foreground mb-6">Core Expertise</h3>
             <div className="space-y-4">
               {[

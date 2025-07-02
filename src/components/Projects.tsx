@@ -15,8 +15,9 @@ const Projects = () => {
   ];
 
   return (
-    <section className="py-20 px-6 bg-background">
-      <div className="max-w-6xl mx-auto">
+    <section className="py-20 px-6 bg-background section-bg-animation">
+      <div className="floating-dots"></div>
+      <div className="max-w-6xl mx-auto relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-light text-foreground mb-6">
             Featured Projects
@@ -29,7 +30,7 @@ const Projects = () => {
         
         <div className="grid md:grid-cols-1 gap-8 max-w-2xl mx-auto">
           {projects.map((project, index) => (
-            <Card key={index} className="overflow-hidden bg-gradient-card shadow-card border-border hover:shadow-soft transition-all duration-300 group">
+            <Card key={index} className="overflow-hidden bg-gradient-card shadow-card border-border card-hover transition-all duration-300 group">
               <div className="p-8">
                 {/* Project Icon */}
                 <div className="flex items-center justify-between mb-6">

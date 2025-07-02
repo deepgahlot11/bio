@@ -19,8 +19,9 @@ const SocialLinks = () => {
   ];
 
   return (
-    <section className="py-20 px-6 bg-secondary">
-      <div className="max-w-4xl mx-auto">
+    <section className="py-20 px-6 bg-secondary section-bg-animation">
+      <div className="floating-dots"></div>
+      <div className="max-w-4xl mx-auto relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-light text-foreground mb-6">
             Let's Connect
@@ -30,7 +31,7 @@ const SocialLinks = () => {
         
         <div className="grid md:grid-cols-2 gap-6">
           {links.map((link, index) => (
-            <Card key={index} className="p-8 bg-gradient-card shadow-card border-border hover:shadow-soft transition-all duration-300 group">
+            <Card key={index} className="p-8 bg-gradient-card shadow-card border-border card-hover transition-all duration-300 group">
               <div className="flex items-start justify-between mb-4">
                 <div className="flex items-center space-x-3">
                   <span className="text-3xl">{link.icon}</span>
