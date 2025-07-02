@@ -12,20 +12,19 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-muted-foreground leading-relaxed">
-              I'm a passionate full-stack developer with a keen eye for design and a love for clean, 
-              efficient code. My journey in software development has taken me through various industries, 
-              from startups to enterprise-level applications.
+              Adept at leveraging innovative technologies to drive efficiency and enhance user experience. 
+              Strong communicator with a passion for mentoring and fostering collaborative environments. 
+              Committed to continuous learning and improvement in fast-paced tech landscapes.
             </p>
             
             <p className="text-muted-foreground leading-relaxed">
-              I specialize in modern web technologies including React, Node.js, TypeScript, and cloud 
-              architecture. I believe in writing code that not only works but is maintainable, scalable, 
-              and delightful to use.
+              Experienced in architecting scalable microservices, implementing cloud-native solutions, 
+              and leading cross-functional teams to deliver high-quality products on time.
             </p>
             
             <p className="text-muted-foreground leading-relaxed">
-              When I'm not coding, you'll find me exploring new technologies, contributing to open source 
-              projects, or sharing knowledge with the developer community.
+              Passionate about building robust software solutions that solve real-world problems 
+              and create meaningful impact for users and businesses.
             </p>
           </div>
           
@@ -33,11 +32,12 @@ const About = () => {
             <h3 className="text-xl font-medium text-foreground mb-6">Core Expertise</h3>
             <div className="space-y-4">
               {[
-                'Frontend Development (React, TypeScript, Next.js)',
-                'Backend Development (Node.js, Python, PostgreSQL)',
-                'Cloud Architecture (AWS, Docker, Kubernetes)',
-                'Team Leadership & Mentoring',
-                'Product Strategy & Planning'
+                'Backend Development (Java, Spring Boot, Microservices)',
+                'Frontend Development (React, Angular, TypeScript)',
+                'Cloud Architecture (AWS, Azure, Kubernetes, Docker)',
+                'Data Technologies (PostgreSQL, MySQL, Redis, Elastic Search)',
+                'DevOps & Monitoring (Jenkins, Prometheus, Grafana, Sleuth)',
+                'Team Leadership & Solution Architecture'
               ].map((skill, index) => (
                 <div key={index} className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-primary rounded-full"></div>

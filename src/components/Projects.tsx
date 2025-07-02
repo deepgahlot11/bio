@@ -5,36 +5,12 @@ import { ExternalLink, Github } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution built with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, and admin dashboard.",
-      tech: ["React", "Node.js", "PostgreSQL", "Stripe"],
-      liveUrl: "https://ecommerce-demo.com",
-      githubUrl: "https://github.com/johndoe/ecommerce",
-      image: "🛒"
-    },
-    {
-      title: "Task Management App",
-      description: "A collaborative task management application with real-time updates, team collaboration features, and advanced filtering capabilities.",
-      tech: ["Next.js", "TypeScript", "Prisma", "WebSocket"],
-      liveUrl: "https://taskapp-demo.com",
-      githubUrl: "https://github.com/johndoe/taskapp",
-      image: "📋"
-    },
-    {
-      title: "Weather Analytics Dashboard",
-      description: "A data visualization dashboard that aggregates weather data from multiple APIs and provides insightful analytics with interactive charts.",
-      tech: ["React", "D3.js", "Python", "FastAPI"],
-      liveUrl: "https://weather-analytics.com",
-      githubUrl: "https://github.com/johndoe/weather-dashboard",
-      image: "🌤️"
-    },
-    {
-      title: "Social Media Scheduler",
-      description: "An automated social media posting tool with content calendar, analytics tracking, and multi-platform support for businesses.",
-      tech: ["Vue.js", "Express.js", "MongoDB", "Redis"],
-      liveUrl: "https://social-scheduler.com",
-      githubUrl: "https://github.com/johndoe/social-scheduler",
-      image: "📱"
+      title: "Company Research AI Platform",
+      description: "This project is a full-stack AI-driven platform for company research and information extraction. It combines React frontend, Spring Boot backend with JWT-based auth, LangGraph AI agent using FastAPI and Gemini/Tavily APIs, all containerized using Docker and orchestrated via Docker Compose.",
+      tech: ["React", "Java", "Spring Boot", "Spring Security", "Python", "LangGraph", "AI Agent", "PostgreSQL", "Docker", "Nginx", "FastAPI", "Gemini", "Tavily API"],
+      liveUrl: "https://react-frontend-k26s.onrender.com/",
+      githubUrl: "https://github.com/deepgahlot11/company_research_platform",
+      image: "🤖"
     }
   ];
 
@@ -51,7 +27,7 @@ const Projects = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-1 gap-8 max-w-2xl mx-auto">
           {projects.map((project, index) => (
             <Card key={index} className="overflow-hidden bg-gradient-card shadow-card border-border hover:shadow-soft transition-all duration-300 group">
               <div className="p-8">

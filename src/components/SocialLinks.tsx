@@ -6,13 +6,13 @@ const SocialLinks = () => {
   const links = [
     {
       name: "LinkedIn",
-      url: "https://linkedin.com/in/johndoe",
+      url: "https://www.linkedin.com/in/deepgahlot/",
       description: "Connect with me professionally and view my career journey",
       icon: "💼"
     },
     {
       name: "GitHub",
-      url: "https://github.com/johndoe",
+      url: "https://github.com/deepgahlot11",
       description: "Explore my open source projects and contributions",
       icon: "⚡"
     }
