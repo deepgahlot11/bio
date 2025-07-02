@@ -3,11 +3,20 @@ import { Download } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-[80vh] bg-gradient-hero flex items-center justify-center px-6">
-      <div className="max-w-4xl mx-auto text-center space-y-8">
-        {/* Profile Image Placeholder */}
-        <div className="w-32 h-32 mx-auto rounded-full bg-gradient-card shadow-card border border-border flex items-center justify-center text-4xl font-light text-primary">
-          DG
+    <section className="relative min-h-[60vh] bg-gradient-hero flex items-center justify-center px-6 overflow-hidden">
+      {/* Animated Background */}
+      <div className="absolute inset-0 opacity-30">
+        <div className="floating-circles"></div>
+      </div>
+      
+      <div className="max-w-4xl mx-auto text-center space-y-8 relative z-10">
+        {/* Profile Image */}
+        <div className="w-32 h-32 mx-auto rounded-full bg-gradient-card shadow-card border border-border overflow-hidden">
+          <img 
+            src="/lovable-uploads/b86d7741-6973-41ee-bf12-bbb442692d47.png" 
+            alt="Deep Gahlot" 
+            className="w-full h-full object-cover"
+          />
         </div>
         
         {/* Name and Title */}
@@ -16,7 +25,7 @@ const Hero = () => {
             Deep Gahlot
           </h1>
           <p className="text-xl md:text-2xl text-primary font-light">
-            Software Developer/Engineering Manager/Solution Architect
+            Software Developer / Architect
           </p>
         </div>
         
