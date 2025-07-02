@@ -3,7 +3,7 @@ import { Download } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-[60vh] bg-gradient-hero flex items-center justify-center px-6 overflow-hidden">
+    <section className="relative min-h-[80vh] bg-gradient-hero flex items-center justify-center px-6 overflow-hidden">
       {/* Animated Background */}
       <div className="absolute inset-0 opacity-30">
         <div className="floating-circles"></div>
@@ -13,7 +13,7 @@ const Hero = () => {
         {/* Profile Image */}
         <div className="w-32 h-32 mx-auto rounded-full bg-gradient-card shadow-card border border-border overflow-hidden">
           <img
-            src="/lovable-uploads/b86d7741-6973-41ee-bf12-bbb442692d47.png"
+            src="/bio/deep.jpg"
             alt="Deep Gahlot"
             className="w-full h-full object-cover"
           />
@@ -41,7 +41,7 @@ const Hero = () => {
         {/* CTA Button */}
         <div className="flex justify-center items-center pt-6 text-reveal delay-3">
           <a
-            href="/deep_gahlot_resume.pdf"
+            href="/bio/deep_gahlot_resume.pdf"
             download
             className="group transition-all duration-300 hover:shadow-soft"
           >
