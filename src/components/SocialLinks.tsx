@@ -28,7 +28,12 @@ const SocialLinks = () => {
 
   return (
     <section className="py-20 px-6 bg-secondary section-bg-animation">
-      <div className="floating-dots"></div>
+      <div className="floating-dots">
+        <div className="dot-1"></div>
+        <div className="dot-2"></div>
+        <div className="dot-3"></div>
+        <div className="dot-4"></div>
+      </div>
       <div className="max-w-4xl mx-auto relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-light text-foreground mb-6">
