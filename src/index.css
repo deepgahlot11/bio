@@ -481,3 +481,81 @@ All colors MUST be HSL.
     }
   }
 }
+
+@layer utilities {
+  .animate-spin-slow {
+    animation: spin 6s linear infinite;
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.ai-pulse {
+  animation: ai-pulse 1.8s cubic-bezier(0.4,0,0.2,1) infinite;
+}
+
+@keyframes ai-pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.18);
+  }
+}
+
+.ai-node {
+  opacity: 0.5;
+  animation: ai-node-highlight 2s linear infinite;
+}
+.node-1 { animation-delay: 0s; }
+.node-2 { animation-delay: 0.5s; }
+.node-3 { animation-delay: 1s; }
+.node-4 { animation-delay: 1.5s; }
+
+@keyframes ai-node-highlight {
+  0%, 100% { opacity: 0.5; }
+  10% { opacity: 1; }
+  25% { opacity: 0.5; }
+}
+
+.ai-glow {
+  filter: blur(4px);
+  opacity: 0.5;
+  transform-origin: center;
+  animation: ai-glow-pulse 1.6s cubic-bezier(0.4,0,0.2,1) infinite;
+}
+
+@keyframes ai-glow-pulse {
+  0%, 100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.35);
+  }
+}
+
+.ai-shimmer {
+  animation: ai-shimmer-move 2.2s linear infinite;
+}
+@keyframes ai-shimmer-move {
+  0% {
+    opacity: 0.7;
+    transform: translateX(-20px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 0.7;
+    transform: translateX(-20px);
+  }
+}

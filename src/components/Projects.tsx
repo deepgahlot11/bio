@@ -25,7 +25,81 @@ const Projects = () => {
       ],
       liveUrl: "https://react-frontend-k26s.onrender.com/",
       githubUrl: "https://github.com/deepgahlot11/company_research_platform",
-      image: "🤖",
+      image: (
+        <svg
+          width="44"
+          height="44"
+          viewBox="0 0 44 44"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <linearGradient
+              id="ai-gradient"
+              x1="0"
+              y1="0"
+              x2="44"
+              y2="44"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stopColor="#2563eb" />
+              <stop offset="1" stopColor="#60a5fa" />
+            </linearGradient>
+            <linearGradient
+              id="ai-shimmer"
+              x1="0"
+              y1="0"
+              x2="44"
+              y2="0"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stopColor="#fff" stopOpacity="0" />
+              <stop offset="0.5" stopColor="#fff" stopOpacity="0.7" />
+              <stop offset="1" stopColor="#fff" stopOpacity="0" />
+            </linearGradient>
+          </defs>
+          <rect
+            x="2"
+            y="2"
+            width="40"
+            height="40"
+            rx="12"
+            fill="url(#ai-gradient)"
+            fillOpacity="0.12"
+          />
+          <text
+            x="8"
+            y="30"
+            fontFamily="'Inter',sans-serif"
+            fontWeight="bold"
+            fontSize="22"
+            fill="url(#ai-gradient)"
+          >
+            A
+          </text>
+          <text
+            x="25"
+            y="30"
+            fontFamily="'Inter',sans-serif"
+            fontWeight="bold"
+            fontSize="22"
+            fill="url(#ai-gradient)"
+          >
+            I
+          </text>
+          <g>
+            <rect
+              x="7"
+              y="33"
+              width="30"
+              height="4"
+              rx="2"
+              fill="url(#ai-shimmer)"
+              className="ai-shimmer"
+            />
+          </g>
+        </svg>
+      ),
     },
   ];
 
